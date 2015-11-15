@@ -1,0 +1,106 @@
+body{
+    font-family: 'Microsoft Yahei';
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    background: url('../images/western_background.jpg');
+    background-repeat: repeat-y;
+}
+
+#layout{
+    width: 1123px;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+#game-panel{
+    width: 1123px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+}
+#game-panel .GCPoker{
+    border-radius: 10px;
+    overflow: hidden;
+    background: url('../images/western_cardback.png');
+    background-size: cover!important;
+    background-position: 50% 50%!important;
+    top: 25px;
+    position: absolute;
+    width: 141px;
+    height: 204px;
+}
+#game-panel .GCLeft{
+    left: 250px;
+}
+#game-panel .GCRight{
+    right: 250px;
+}
+#game-panel .GCNext{
+    text-align: center;
+    color: white;
+    line-height: 95px;
+    overflow: hidden;
+    position: absolute;
+    width: 80px;
+    height: 66px;
+    background: url("../images/Back-up.png");
+    top: 92px;
+    left: 520px;
+    cursor: pointer;
+}
+.poker{
+    border:2px solid black;
+    width: 137px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px black;
+    position: absolute;
+    background: url('../images/western_cardback.png');
+    background-size: cover!important;
+    background-position: 50% 50%!important;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#alert{
+    transition:all 0.3s ease;
+    z-index: -1;
+    opacity: 0;
+    background: rgba(0,0,0,0.8);
+    width: 700px;
+    height: 400px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+}
+#alert #pic{
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    background-size: cover!important;
+    background: url("../images/tips.png");
+    top: 140px;
+    left: 70px;
+}
+#alert #info{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    line-height: 120px;
+    position: absolute;
+    top: 140px;
+    right: 50px;
+    width: 450px;
+    height: 120px;
+}
+#alert #close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: url("../images/corrupt.png");
+    background-size: cover;
+    cursor: pointer;
+}
