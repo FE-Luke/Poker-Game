@@ -1,4 +1,4 @@
-body{
+﻿body{
     font-family: 'Microsoft Yahei';
     margin: 0;
     padding: 0;
@@ -51,8 +51,7 @@ body{
     cursor: pointer;
 }
 .poker{
-    animation-duration:0.3s;    /*动画时长*/
-    transform: rotateY(270deg);
+    animation-duration:0.3s;    /*动画时长*/ 
     border:2px solid black;
     width: 137px;
     height: 200px;
@@ -64,6 +63,7 @@ body{
     background-position: 50% 50%!important;
     overflow: hidden;
     cursor: pointer;
+    transform: rotateY(270deg);
 }
 
 #alert{
