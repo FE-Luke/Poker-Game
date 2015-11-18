@@ -83,6 +83,7 @@ window.onload = function(){
         pokerTop+=70;
     }
 
+
     for(var i=0;i<24;i++){
         var pokerEl = document.createElement('div');
         var pk = randomPoker();
@@ -92,7 +93,22 @@ window.onload = function(){
         pokerEl.style.left = '0px';
         pokerEl.style.background = "url('./images/"+pk.poker+".png')";
         GCPokerEl[0].appendChild(pokerEl);
+        pokerEl.style.transform="rotateY(0deg)";
     }
+
+    var pokerCount = 0;
+    var pokerAnim = setInterval(function(){
+        var pokerEl = document.querySelectorAll('#layout .poker');
+        console.log(pokerCount,pokerEl.length);
+        if(pokerCount<pokerEl.length){
+            pokerEl[pokerCount].style.animationName = 'pokerAnim';
+            pokerEl[pokerCount].style.transform = 'rotateZ(0deg)';
+            pokerCount++;
+        }else{
+            console.log(pokerCount);
+            clearInterval(pokerAnim);
+        }
+    },100);
 
     //事件委托
     //
